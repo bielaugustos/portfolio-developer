@@ -2,6 +2,7 @@
   "name": "portfolio-developer",
   "version": "0.1.0",
   "private": false,
+  "license": "Unlicense",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
