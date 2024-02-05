@@ -40,7 +40,7 @@ export const ProjectCard = () => {
         </div>
 
           <Link href="/projects/book-wise">
-          Ver Projetos
+          Ver Projeto
           <HiArrowNarrowRight />
           </Link>
         
