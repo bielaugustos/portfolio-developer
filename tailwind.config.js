@@ -9,6 +9,10 @@ module.exports = {
     fontFamily: {
       sans: ['var(--font-inter)', 'sans-serif'],
     },
+    // mudar o tamanho da fonte
+    // fontSize: {
+    //   sm: '0.8rem',
+    // },    
     extend: {
       backgroundImage: {
         'hero-image': "url('/images/hero-bg.png')",
