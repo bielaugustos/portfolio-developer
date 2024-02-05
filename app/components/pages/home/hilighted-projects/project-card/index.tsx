@@ -13,6 +13,7 @@ export const ProjectCard = () => {
           src="https://media.graphassets.com/FRhUdgUQTHmLmwf9u0BA"
           alt="Thumbnail do projeto Bookwise"
           className="w-full h-[200px] sm-h-[300px] lg:w-[420px] lg:min-h-full object-cover rounded-lg"
+          unoptimized
         />
       </div>
 
