@@ -45,7 +45,7 @@ export const ExperienceItem = ({ experience }: ExperienceItemProps) => {
     <div className="grid grid-cols-[40px,1fr] gap-4 md:gap-10">
       {/* Imagem da Empresa */}
       <div className="flex flex-col items-center gap-4">
-        <div className="rounded-full border-gray-500 p-0.5">
+        <div className="rounded-full bg-amber-600 p-0.5">
           <Image
             src={companyLogo.url}
             width={40}
@@ -59,7 +59,7 @@ export const ExperienceItem = ({ experience }: ExperienceItemProps) => {
 
       <div>
         {/* Empresa e Expêriencia */}
-        <div className="flex flex-col gap-2 text-sm sm:text-base">
+        <div className="flex flex-col gap-2 text-xs">
           <a
             href={companyUrl}
             target="_blank"
@@ -75,7 +75,7 @@ export const ExperienceItem = ({ experience }: ExperienceItemProps) => {
         </div>
 
         {/* Competências */}
-        <p className="text-gray-400 text-sm mb-3 mt-6 font-semibold">Competências</p>
+        <p className="text-gray-400 text-xs mb-3 mt-6 font-semibold">Competências</p>
         {/* Tecnologias */}
         <div className="flex gap-x-2 gap-y-3 flex-wrap lg:max-w-[350px] mb-8">
           {technologies.map(tech => (

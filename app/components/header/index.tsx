@@ -10,7 +10,7 @@ const NAV_ITEMS =
     href: '/'
   },
   {
-    label: 'Projects',
+    label: 'Projetos',
     href: '/projects' 
   }
 ]

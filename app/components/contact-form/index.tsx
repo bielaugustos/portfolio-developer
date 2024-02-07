@@ -25,7 +25,7 @@ export const ContactForm = () => {
   }
 
   return (
-    <section id='contact' className="py-16 px-6 md:py-[128px] flex items-center justify-center bg-zinc-900">
+    <section id='contact' className="text-xs py-16 px-6 md:py-[128px] flex items-center justify-center bg-zinc-900">
       <div className="w-full max-w-[420px] mx-auto">
         <SectionTitle
           subtitle="contato"
@@ -57,7 +57,7 @@ export const ContactForm = () => {
           <div className="relative w-max mx-auto mt-6">
             <Button className="z-[2] relative">
               Enviar mensagem
-              <HiArrowNarrowRight size={18} />
+              <HiArrowNarrowRight size={14} />
             </Button>
             <div className="absolute inset-0 bg-amber-600 blur-2xl opacity-20" />
           </div>

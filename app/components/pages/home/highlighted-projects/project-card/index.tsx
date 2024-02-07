@@ -23,7 +23,7 @@ export const ProjectCard = ({ project }: ProjectCardProps) => {
       </div>
 
       <div className="flex-1 lg:py-[18px]">
-        <h3 className="flex items-center gap-3 font-medium text-lg text-gray-50">
+        <h3 className="flex items-center gap-3 font-medium text-md text-gray-50">
           <Image
             width={20}
             height={20}
@@ -32,10 +32,10 @@ export const ProjectCard = ({ project }: ProjectCardProps) => {
           />
           {project.title}
         </h3>
-        <p className="text-gray-400 my-6">
+        <p className="text-gray-400 my-6 text-xs">
           {project.shortDescription}
         </p>
-        <div className="flex gap-x-2 gap-y-3 flex-wrap mb-8 lg:max-w-[350px]">
+        <div className="flex gap-x-2 gap-y-3 flex-wrap mb-8 lg:max-w-[300px]">
           {project.technologies.map(tech => (
             <TechBadge key={`${project.title}-tech-${tech.name}`} name={tech.name} />
           ))}

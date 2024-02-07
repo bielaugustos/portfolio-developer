@@ -16,7 +16,7 @@ export const NavItem = ({ label, href }: NavItemProps) => {
 
   return (
     <Link href={href}
-    className={cn( "text-zinc-400 items-center flex gap-2 font-medium hover:text-amber-400 transition-colors",
+    className={cn( "text-zinc-400 items-center flex gap-2 text-sm font-medium hover:text-amber-400 transition-colors",
     isActive && 'text-amber-400',)}>
       <span 
         className="text-zinc-400 font-mono hover:text-amber-400 transition-colors"

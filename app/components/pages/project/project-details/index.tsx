@@ -29,43 +29,40 @@ export const ProjectDetails = ({ project }: ProjectDetailsProps ) => {
         className="text-center items-center sm:[&>h3]:text-4xl"
       /> 
 
-      <div className="text-gray-400 text-center max-w-[640px] my-4 sm:my-6 text-sm sm:text-base">
+      <div className="text-gray-400 text-center max-w-[640px] my-4 sm:my-6 text-xs">
        <RichText content={project.description.raw}/>
       </div>
 
-      <div className="w-full max-w-[330px] flex flex-wrap gap-2 items-center justify-center">
+      <div className="w-full max-w-[330px] flex flex-wrap gap-2 items-center justify-center ">
         {project.technologies.map(tech => (
           <TechBadge key={tech.name} name={tech.name}></TechBadge>
         ))}
       </div>
 
-      <div className="my-6 sm:my-12 flex items-center gap-2 sm:gap-4 flex-col sm:flex-row">
+      <div className="my-6 sm:my-12 flex items-center gap-2 sm:gap-4 flex-col sm:flex-row text-xs">
         {project?.githubUrl && (
-        <a 
-          href={project.githubUrl}
+        <a href={project.githubUrl}
           target="_blank">
           <Button className="min-w-[180px]">
-           <TbBrandGithub size={20} />
+           <TbBrandGithub size={14} />
             Repositório
           </Button>
         </a>
       )}
         {project?.liveProjectUrl && (
-        <a 
-          href={project.liveProjectUrl}
+        <a href={project.liveProjectUrl}
           target="_blank">
           <Button className="min-w-[180px]">
-           <FiGlobe size={20} />
+           <FiGlobe size={14} />
             Projeto Online
           </Button>
         </a>
       )}
-
-      </div>
+    </div>
 
       <Link href="/projects"
-            className="flex items-center gap-2 text-gray-300 text-sm hover:text-amber-500 transition-colors">
-               <HiArrowNarrowLeft size={20} />
+            className="flex items-center gap-2 text-gray-300 text-xs hover:text-amber-500 transition-colors">
+               <HiArrowNarrowLeft size={14} />
              Voltar para projetos
       </Link>
 
