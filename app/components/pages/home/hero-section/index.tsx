@@ -69,7 +69,7 @@ export const HeroSection = ({ homeInfo }: HomeSectionProps) => {
           height={404}
           src={homeInfo.profilePicture.url}
           alt="Foto de Perfil do Gabriel Augusto"
-          className="w-[300px] h-[300px] lg:w-[420px] lg:h-[404px] mb-6 lg:mb-0 shadow-2xl rounded-full object-cover"
+          className="w-[300px] h-[300px] lg:w-[320px] lg:h-[320px] mb-6 lg:mb-20 ml-[30px] shadow-2xl rounded-full object-cover"
           />
 
       </div>

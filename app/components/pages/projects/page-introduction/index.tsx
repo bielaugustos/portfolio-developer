@@ -4,13 +4,13 @@ import { HiArrowNarrowLeft } from 'react-icons/hi'
 
 export const PageIntroduction = () => {
   return (
-    <section className="w-full h-[630px] bg-hero-image bg-cover bg-center bg-no-repeat flex flex-col items-center justify-center">
+    <section className="lg:w-full lg:h-[630px] h-[400px] bg-hero-image bg-cover bg-center bg-no-repeat flex flex-col items-center justify-center">
       <SectionTitle
         subtitle="projetos"
         title="Meus Projetos"
         className="text-center items-center [&>h3]:text-4xl"
       />
-      <p className="text-gray-400 text-xs text-center max-w-[440px] my-6">
+      <p className="text-gray-400 text-xs text-center max-w-[320px] my-6">
         Aqui você poderá ver alguns dos trabalhos que eu desenvolvi. Navegue à
         vontade e explore os projetos para ver como foram criados, as
         tecnologias utilizadas e as funcionalidades implementadas.
