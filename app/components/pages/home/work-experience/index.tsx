@@ -1,6 +1,10 @@
+'use client'
+
 import { SectionTitle } from "@/app/components/section-title";
 import { ExperienceItem } from "./experience-item";
 import { WorkExperience as IWorkExperience } from "@/app/types/work-experience";
+import { motion } from "framer-motion";
+import { fadeUpAnimation } from "@/app/lib/animations";
 
 type WorkExperienceProps = {
   experiences: IWorkExperience[];
@@ -15,13 +19,16 @@ export const WorkExperience = ({ experiences }: WorkExperienceProps) => {
           title="Experiência Profissional"
           subtitle="experiências"
         />
-        <p className="text-gray-400 text-xs mt-6">
+        <motion.p className="text-gray-400 text-xs mt-6"
+        {...fadeUpAnimation}
+        transition={{ duration: 0.2, delay: 0.3 }}
+        >
           Atualmente <strong className="text-amber-400">desenvolvo projetos web</strong> conectando expêriencias de outras
           áreas que agreguem valor a identidade do negócio, meu objetivo é criar
           interfaces de usuário bonitas e funcionais, além de liderar equipes
           técnicas em projetos desafiadores. Estou sempre aberto a novas
           oportunidades e desafios, disponível para pair-programming.
-        </p>
+        </motion.p>
       </div>
 
       <div className="flex flex-col gap-4">

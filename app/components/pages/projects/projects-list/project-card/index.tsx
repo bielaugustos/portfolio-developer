@@ -1,3 +1,4 @@
+
 import { Project } from '@/app/types/projects'
 import Image from 'next/image'
 

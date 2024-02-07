@@ -9,7 +9,7 @@ type KnownTechProps = {
 export const KnownTech = ({ tech }: KnownTechProps) => {
   const relativeTime = getRelativeTimeString(new Date(tech.startDate), 'pt-BR')?.replace('há', '')
   return (
-    <div className="p-6 rounded-lg text-xs bg-zinc-600/20 text-gray-500 flex flex-col gap-2 hover:text-amber-500 hover:bg-gray-600/30 transition-all">
+    <div className="p-6 rounded-lg text-sm bg-zinc-600/20 text-gray-500 flex flex-col gap-2 hover:text-amber-500 hover:bg-gray-600/30 transition-all">
       <div className="flex items-center justify-between">
         <p className="font-medium">
           {tech.name}</p>

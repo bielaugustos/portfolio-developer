@@ -8,6 +8,8 @@ import { Button } from '../button'
 import { HiArrowNarrowRight } from 'react-icons/hi'
 import axios from 'axios'
 import { toast } from 'react-hot-toast'
+import { motion } from 'framer-motion'
+import { fadeUpAnimation } from '@/app/lib/animations'
 
 const contactFormSchema = z.object({
   name: z.string().min(3).max(100),
@@ -45,9 +47,11 @@ export const ContactForm = () => {
           title="Vamos trabalhar juntos ? Entre em contato"
           className="items-center text-center"
         />
-        <form
+        <motion.form
           className="mt-12 w-full flex flex-col gap-4"
           onSubmit={handleSubmit(onSubmit)}
+          {...fadeUpAnimation}
+          transition={{duration: 0.5, delay: 0.2}}
         >
           <input
             placeholder="Nome"
@@ -74,7 +78,7 @@ export const ContactForm = () => {
             </Button>
             <div className="absolute inset-0 bg-amber-600 blur-2xl opacity-20" />
           </div>
-        </form>
+        </motion.form>
       </div>
     </section>
   )
