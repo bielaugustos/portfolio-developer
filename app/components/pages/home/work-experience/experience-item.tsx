@@ -54,7 +54,7 @@ export const ExperienceItem = ({ experience }: ExperienceItemProps) => {
             className="rounded-full"
           />
         </div>
-        <div className="h-full w-[1px] bg-gray-800" />
+        <div className="h-full w-[1px] bg-zinc-800" />
       </div>
 
       <div>
@@ -63,7 +63,7 @@ export const ExperienceItem = ({ experience }: ExperienceItemProps) => {
           <a
             href={companyUrl}
             target="_blank"
-            className="text-gray-500 hover:text-emerald-500 transition-colors"
+            className="text-gray-500 hover:text-amber-500 transition-colors"
           >
             @ {companyName}
           </a>

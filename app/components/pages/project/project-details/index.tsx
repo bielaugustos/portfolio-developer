@@ -64,7 +64,7 @@ export const ProjectDetails = ({ project }: ProjectDetailsProps ) => {
       </div>
 
       <Link href="/projects"
-            className="flex items-center gap-2 text-gray-300 text-sm hover:text-emerald-500 transition-colors">
+            className="flex items-center gap-2 text-gray-300 text-sm hover:text-amber-500 transition-colors">
                <HiArrowNarrowLeft size={20} />
              Voltar para projetos
       </Link>

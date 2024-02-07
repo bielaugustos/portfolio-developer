@@ -28,8 +28,8 @@ export const HeroSection = ({ homeInfo }: HomeSectionProps) => {
       <div className="container flex items-start justify-between flex-col-reverse lg:flex-row">
          {/* Seção de texto Hero Section (aside) */}
         <div className="w-full lg:max-w-[530px]">
-          <p className="font-mono text-emerald-400">Olá, meu nome é</p>
-          <h2 className="text-4xl font-medium mt-2">Gabriel Augusto</h2>
+          <p className="font-mono text-amber-400">hello world !</p>
+          <h2 className="text-4xl font-medium mt-3">Gabriel Augusto</h2>
           <div className="text-gray-400 my-6 text-sm sm:text-base">
           <RichText content={homeInfo.introduction.raw}></RichText>
           </div>
@@ -69,7 +69,7 @@ export const HeroSection = ({ homeInfo }: HomeSectionProps) => {
           height={404}
           src={homeInfo.profilePicture.url}
           alt="Foto de Perfil do Gabriel Augusto"
-          className="w-[300px] h-[300px] lg:w-[420px] lg:h-[404px] mb-6 lg:mb-0 shadow-2xl rounded-lg object-cover"
+          className="w-[300px] h-[300px] lg:w-[420px] lg:h-[404px] mb-6 lg:mb-0 shadow-2xl rounded-full object-cover"
           />
 
       </div>

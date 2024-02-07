@@ -16,7 +16,7 @@ export const WorkExperience = ({ experiences }: WorkExperienceProps) => {
           subtitle="experiências"
         />
         <p className="text-gray-400 mt-6">
-          Atualmente <strong className="text-emerald-400">desenvolvo projetos web</strong> conectando expêriencias de outras
+          Atualmente <strong className="text-amber-400">desenvolvo projetos web</strong> conectando expêriencias de outras
           áreas que agreguem valor a identidade do negócio, meu objetivo é criar
           interfaces de usuário bonitas e funcionais, além de liderar equipes
           técnicas em projetos desafiadores. Estou sempre aberto a novas

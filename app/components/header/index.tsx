@@ -21,10 +21,10 @@ export const Header = () => {
       <div className="container flex items-center justify-between">
         <Link href="/">
           <Image 
-            width={58}
-            height={49}
+            width={25}
+            height={25}
             src= "/images/logo.svg"
-            alt= "Logo BG Dev" 
+            alt= "Logo CG" 
             />
         </Link>
         
