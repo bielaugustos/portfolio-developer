@@ -1,7 +1,12 @@
 import { SectionTitle } from "@/app/components/section-title";
 import { ExperienceItem } from "./experience-item";
+import { WorkExperience as IWorkExperience } from "@/app/types/work-experience";
 
-export const WorkExperience = () => {
+type WorkExperienceProps = {
+  experiences: IWorkExperience[];
+};
+
+export const WorkExperience = ({ experiences }: WorkExperienceProps) => {
   return (
     <section className="container py-16 flex gap-10 md:gap-4 lg:gap-16 flex-col md:flex-row">
       {/* Seção de Experiência Profissional */}
@@ -11,14 +16,21 @@ export const WorkExperience = () => {
           subtitle="experiências"
         />
         <p className="text-gray-400 mt-6">
-          Estou sempre aberto a novos desafios e projetos emocionantes. Vamos
-          trabalhar juntos para criar soluções incríveis para sua empresa !
+          Atualmente <strong className="text-emerald-400">desenvolvo projetos web</strong> conectando expêriencias de outras
+          áreas que agreguem valor a identidade do negócio, meu objetivo é criar
+          interfaces de usuário bonitas e funcionais, além de liderar equipes
+          técnicas em projetos desafiadores. Estou sempre aberto a novas
+          oportunidades e desafios, disponível para pair-programming.
         </p>
       </div>
 
       <div className="flex flex-col gap-4">
-      <ExperienceItem />
-      <ExperienceItem />
+        {experiences?.map((experience) => (
+          <ExperienceItem
+            key={experience.companyName}
+            experience={experience}
+          />
+        ))}
       </div>
     </section>
   );
