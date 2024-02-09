@@ -6,6 +6,7 @@ import { ContactForm } from './components/contact-form'
 import { Footer } from './components/footer'
 import { Toaster } from './components/toaster'
 import { BackToTop } from './components/back-to-top'
+import { Analytics } from '@vercel/analytics/react';
 
 export const metadata = {
   title: {
@@ -39,6 +40,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
 
         <Header />
         {children}
+        <Analytics />
         <ContactForm />
         <Footer />
       </body>
