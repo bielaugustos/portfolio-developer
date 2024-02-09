@@ -9,10 +9,6 @@ module.exports = {
     fontFamily: {
       sans: ['var(--font-inter)', 'sans-serif'],
     },
-    // mudar o tamanho da fonte
-    // fontSize: {
-    //   sm: '0.8rem',
-    // },    
     extend: {
       backgroundImage: {
         'hero-image': "url('/images/hero-bg.png')",
@@ -21,7 +17,7 @@ module.exports = {
         mono: ['var(--font-plex-mono)', 'monospace'],
       },
       boxShadow: {
-        button: '0px 0px 68px 7px rgba(242,184,7,0.4)',
+        button: '0px 0px 68px 7px rgba(251,191,36,0.4)',
       },
     },
   },

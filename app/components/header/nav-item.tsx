@@ -1,26 +1,27 @@
-'use client'
-
-import { cn } from "@/app/lib/utils";
-import Link from "next/link"
-import { usePathname } from "next/navigation"; //hook para saber se link está ativo(ou em hover)
+import { cn } from '@/app/lib/utils'
+import Link from 'next/link'
+import { usePathname } from 'next/navigation'
 
 type NavItemProps = {
-  label: string,
   href: string
+  label: string
 }
 
 export const NavItem = ({ label, href }: NavItemProps) => {
-  // essa é uma validação se o usuario estiver na rota selecionada
-  const pathname = usePathname();
-  const isActive = pathname === href;
+  const pathname = usePathname()
+
+  const isActive = pathname === href
 
   return (
-    <Link href={href}
-    className={cn( "text-zinc-400 items-center flex gap-2 text-sm font-medium hover:text-amber-400 transition-colors",
-    isActive && 'text-amber-400',)}>
-      <span 
-        className="text-zinc-400 font-mono hover:text-amber-400 transition-colors"
-        >#</span>{label}
+    <Link
+      href={href}
+      className={cn(
+        'text-xs text-gray-400 flex items-center gap-2 font-medium font-sans',
+        isActive && 'text-gray-50',
+      )}
+    >
+      <span className="text-amber-400">#</span>
+      {label}
     </Link>
   )
 }

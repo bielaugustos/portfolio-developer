@@ -1,12 +1,29 @@
-# Template - Tutorial Portfólio 2023
+## 💚 Portfolio Tutorial 2023
 
-![image](https://github.com/gbdev-labs/template-portfolio-tutorial-2023/assets/71772559/ade0ec7a-cb22-4c5c-a4fa-183ab380357e)
+This project is a tutorial series for my [YouTube channel](https://www.youtube.com/@GBDev) where I teach viewers how to create a modern and professional portfolio using the latest web development tools and technologies. In this series, we will be using Next.js 13, Tailwind CSS, Hygraph CMS, TypeScript, and Framer Motion to build a complete and functional portfolio website from scratch.
 
+## 🖥 Project Images
+<img src="https://github.com/GBDev13/portfolio-tutorial-2023/assets/71772559/341fef7a-536d-4b4e-b124-9b99be313575" align="center" />
 
-Este é um template básico que será usado na [série do YouTube](https://youtube.com/playlist?list=PLY_G6KZ7jlfU41bdaWpTsOnfCC7bmpJcL) para criar um Portfólio com as ferramentas mais recentes de desenvolvimento web. O template inclui o Next.js 13, Tailwind CSS, Hygraph CMS, TypeScript e Framer Motion, que são as tecnologias principais que serão usadas na série.
+&nbsp;
 
-O objetivo deste template é fornecer um ponto de partida para os espectadores que acompanham a série de tutoriais e desejam seguir juntamente com a construção do portfólio. Ele inclui a estrutura básica do projeto e os arquivos necessários para iniciar o desenvolvimento do portfólio.
+More images [here](https://www.gbdev.me/projects/portfolio-tutorial-2023)
 
-Ao usar este template, você poderá seguir os tutoriais da série passo a passo e criar um portfólio profissional e impressionante com as mais recentes tecnologias de desenvolvimento web.
+&nbsp;
 
-[**Projeto final**](https://github.com/GBDev13/portfolio-tutorial-2023)
+## ⚙️ Technologies
+
+* Next.js 13
+* TypeScript
+* Tailwind
+* Framer Motion
+* Hygraph CMS
+
+&nbsp;
+
+### 🔗 Project live
+* [Portfolio Tutorial 2023](https://portfolio-tutorial-2023.vercel.app/)
+
+&nbsp;
+
+<p align="center">Developed with 💙 by GBDev</p>

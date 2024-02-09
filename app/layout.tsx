@@ -1,20 +1,22 @@
 import { Inter, IBM_Plex_Mono } from 'next/font/google'
 import './globals.css'
-import { ReactNode } from 'react'
 import { Header } from './components/header'
+import { ReactNode } from 'react'
 import { ContactForm } from './components/contact-form'
 import { Footer } from './components/footer'
-import { BackToTop } from './components/back-to-top'
 import { Toaster } from './components/toaster'
+import { BackToTop } from './components/back-to-top'
 
 export const metadata = {
   title: {
     default: 'Home',
-    template: '%s | CG'
+    template: '%s | CG',
   },
-  icons: [{
-    url: '/favicon.svg'
-  }]
+  icons: [
+    {
+      url: '/favicon.svg',
+    },
+  ],
 }
 
 const inter = Inter({
@@ -34,6 +36,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
       <body>
         <Toaster />
         <BackToTop />
+
         <Header />
         {children}
         <ContactForm />

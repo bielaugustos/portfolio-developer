@@ -1,34 +1,23 @@
-'use client'
-
-import { SectionTitle } from "@/app/components/section-title";
-import { ExperienceItem } from "./experience-item";
-import { WorkExperience as IWorkExperience } from "@/app/types/work-experience";
-import { motion } from "framer-motion";
-import { fadeUpAnimation } from "@/app/lib/animations";
+import { SectionTitle } from '@/app/components/section-title'
+import { ExperienceItem } from './experience-item'
+import { WorkExperience as IWorkExperience } from '@/app/types/work-experience'
 
 type WorkExperienceProps = {
-  experiences: IWorkExperience[];
-};
+  experiences: IWorkExperience[]
+}
 
 export const WorkExperience = ({ experiences }: WorkExperienceProps) => {
   return (
     <section className="container py-16 flex gap-10 md:gap-4 lg:gap-16 flex-col md:flex-row">
-      {/* Seção de Experiência Profissional */}
       <div className="max-w-[420px]">
         <SectionTitle
-          title="Experiência Profissional"
           subtitle="experiências"
+          title="Experiência Profissional"
         />
-        <motion.p className="text-gray-400 text-xs mt-6"
-        {...fadeUpAnimation}
-        transition={{ duration: 0.2, delay: 0.3 }}
-        >
-          Atualmente <strong className="text-amber-400">desenvolvo projetos web</strong> conectando expêriencias de outras
-          áreas que agreguem valor a identidade do negócio, meu objetivo é criar
-          interfaces de usuário bonitas e funcionais, além de liderar equipes
-          técnicas em projetos desafiadores. Estou sempre aberto a novas
-          oportunidades e desafios, disponível para pair-programming.
-        </motion.p>
+        <p className="text-gray-400 mt-6">
+          Estou sempre aberto a novos desafios e projetos emocionantes. Vamos
+          trabalhar juntos para criar soluções incríveis para sua empresa !
+        </p>
       </div>
 
       <div className="flex flex-col gap-4">
@@ -40,5 +29,5 @@ export const WorkExperience = ({ experiences }: WorkExperienceProps) => {
         ))}
       </div>
     </section>
-  );
-};
+  )
+}
