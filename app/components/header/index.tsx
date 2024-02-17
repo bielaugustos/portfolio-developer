@@ -12,7 +12,11 @@ const NAV_ITEMS = [
   },
   {
     label: 'Projetos',
-    href: '/projects',
+    href: 'https://docs.astro.build/en/getting-started/',
+  },
+  {
+    label: 'Blog',
+    href: '/blog',
   },
 ]
 
