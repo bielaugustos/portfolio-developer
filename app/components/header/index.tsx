@@ -12,11 +12,11 @@ const NAV_ITEMS = [
   },
   {
     label: 'Projetos',
-    href: 'https://docs.astro.build/en/getting-started/',
+    href: '/projects',
   },
   {
     label: 'Blog',
-    href: 'https://astro-blog-bielaugustos.vercel.app/',
+    href: '/',
   },
 ]
 
