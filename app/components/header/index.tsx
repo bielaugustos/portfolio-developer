@@ -16,7 +16,7 @@ const NAV_ITEMS = [
   },
   {
     label: 'Blog',
-    href: '/blog',
+    href: 'https://astro-blog-bielaugustos.vercel.app/',
   },
 ]
 
